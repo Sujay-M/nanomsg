@@ -34,6 +34,7 @@ set (NN_SOURCES
     pipeline.h
     survey.h
     bus.h
+    router.h
 
     core/ep.h
     core/ep.c
@@ -112,6 +113,8 @@ set (NN_SOURCES
 
     protocols/utils/dist.h
     protocols/utils/dist.c
+    protocols/utils/mdist.h
+    protocols/utils/mdist.c
     protocols/utils/excl.h
     protocols/utils/excl.c
     protocols/utils/fq.h
@@ -125,6 +128,11 @@ set (NN_SOURCES
     protocols/bus/bus.c
     protocols/bus/xbus.h
     protocols/bus/xbus.c
+
+    protocols/router/router.h
+    protocols/router/router.c
+    protocols/router/xrouter.h
+    protocols/router/xrouter.c
 
     protocols/pipeline/push.h
     protocols/pipeline/push.c

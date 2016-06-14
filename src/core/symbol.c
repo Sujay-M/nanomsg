@@ -35,6 +35,7 @@
 #include "../pipeline.h"
 #include "../survey.h"
 #include "../bus.h"
+#include "../router.h"
 #include "../ws.h"
 
 #include <string.h>
@@ -93,6 +94,7 @@ static const struct nn_symbol_properties sym_value_names [] = {
     NN_SYM(NN_SURVEYOR, PROTOCOL, NONE, NONE),
     NN_SYM(NN_RESPONDENT, PROTOCOL, NONE, NONE),
     NN_SYM(NN_BUS, PROTOCOL, NONE, NONE),
+    NN_SYM(NN_ROUTER, PROTOCOL, NONE, NONE),
 
     NN_SYM(NN_SOCKADDR_MAX, LIMIT, NONE, NONE),
 
@@ -115,6 +117,7 @@ static const struct nn_symbol_properties sym_value_names [] = {
     NN_SYM(NN_IPV4ONLY, SOCKET_OPTION, INT, BOOLEAN),
     NN_SYM(NN_SOCKET_NAME, SOCKET_OPTION, STR, NONE),
 
+    NN_SYM(NN_ROUTER_NAME, TRANSPORT_OPTION, STR, NONE),
     NN_SYM(NN_SUB_SUBSCRIBE, TRANSPORT_OPTION, STR, NONE),
     NN_SYM(NN_SUB_UNSUBSCRIBE, TRANSPORT_OPTION, STR, NONE),
     NN_SYM(NN_REQ_RESEND_IVL, TRANSPORT_OPTION, INT, MILLISECONDS),

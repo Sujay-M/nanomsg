@@ -70,6 +70,8 @@
 #include "../protocols/survey/xsurveyor.h"
 #include "../protocols/bus/bus.h"
 #include "../protocols/bus/xbus.h"
+#include "../protocols/router/router.h"
+#include "../protocols/router/xrouter.h"
 
 #include "../pubsub.h"
 #include "../pipeline.h"
@@ -255,6 +257,8 @@ static void nn_global_init (void)
     nn_global_add_socktype (nn_xsurveyor_socktype);
     nn_global_add_socktype (nn_bus_socktype);
     nn_global_add_socktype (nn_xbus_socktype);
+    nn_global_add_socktype (nn_router_socktype);
+    nn_global_add_socktype (nn_xrouter_socktype);
 
     /*  Start the worker threads. */
     nn_pool_init (&self.pool);
